@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Base de datos alumnos</title>
+</head>
+
+<body>
+  <div class="field">
+    <label class="label">Datos Alumno</label>
+    <div class="control">
+      <input class="input" type="text" id="txtNombre" placeholder="Nombre">
+      <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+      </span>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label"></label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-success" type="text" id="txtApellido" placeholder="Apellido">
+      <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-check"></i>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="field">
+    <label class="label"></label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-danger" type="number" placeholder="Edad">
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-exclamation-triangle"></i>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="field">
+    <label class="label" id="txtMateria">Materia</label>
+    <div class="control">
+      <div class="select">
+        <select>
+          <option>Literatura</option>
+          <option>Historia</option>
+          <option>Filosofia</option>
+          <option>Estadistica</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link" id="guardarAlumno">Submit</button>
+    </div>
+    <div class="control">
+      <button class="button is-link is-light">Cancel</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Alumnos</h2>
+    <table class="table table-hover" id="listadoAlumnos">
+      <tr>
+        <thead>
+        <th>nombre </th>
+        <th>apellido</th>
+        <th>edad</th>
+        <th>materia</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+    </table>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="index2.js"></script>
+</body>
+
+</html>
